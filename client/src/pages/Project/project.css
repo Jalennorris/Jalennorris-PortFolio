@@ -1,0 +1,143 @@
+/* General Container */
+.projects-page{
+  background-color: rgb(241, 239, 228);
+}
+.projects-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem; /* Add padding for spacing */
+  background-color: rgb(241, 239, 228);
+}
+
+/* Project Section */
+.projects {
+  max-width: 900px; /* Limit width for better layout */
+  text-align: center;
+  margin: 0 auto;
+}
+
+.projects h1 {
+  font-size: 2.5rem; /* Larger and more prominent heading */
+  margin-bottom: 1.5rem;
+  color: #1a1a1a; /* Slightly darker for better contrast */
+  font-weight: bold; /* Emphasize heading */
+}
+
+/* Project List */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Consistent spacing between items */
+}
+
+/* Individual Project Cards */
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px; /* Slightly larger border radius for a modern feel */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smoother animation */
+}
+
+.project-card:hover {
+  transform: translateY(-8px); /* Slightly larger hover effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.project-card h2 {
+  margin-bottom: 0.75rem;
+  color: #2c3e50; /* Deep color for better readability */
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 1rem; /* Slightly larger for readability */
+  color: #555;
+  margin-bottom: 0.5rem; /* Add spacing after paragraph */
+}
+
+.project-card ul {
+  padding-left: 1.25rem; /* Consistent padding for list */
+  list-style-type: disc;
+}
+
+.project-card ul li {
+  font-size: 0.95rem; /* Slightly larger for readability */
+  color: #555;
+  margin-bottom: 0.25rem; /* Add spacing between list items */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects h1 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .project-card ul li {
+    font-size: 0.9rem;
+  }
+}
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.github-link i {
+  margin-right: 8px; /* Space between the icon and text */
+}
+
+.github-link:hover {
+  background-color: #333; /* Darken on hover */
+}
+
+.github-link:active {
+  background-color: #111; /* Darker on click */
+}
+
+
+@media (max-width: 480px) {
+  .projects-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .projects h1 {
+    font-size: 1.8rem;
+  }
+
+  .project-card {
+    padding: 0.75rem;
+  }
+
+  .project-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p,
+  .project-card ul li {
+    font-size: 0.85rem;
+  }
+}

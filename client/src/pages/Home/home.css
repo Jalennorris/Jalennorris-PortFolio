@@ -1,0 +1,235 @@
+.home-container {
+    background-color: rgb(241, 239, 228);
+}
+
+.introduction-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.introduction-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introduction-text-span {
+    font-weight: 600;
+    color: rgb(137, 81, 41);
+}
+
+.introduction-quote {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(162, 160, 160);
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.link-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.link-contact {
+    text-decoration: none;
+}
+
+.text-contact {
+    background-color: transparent;
+    color: black;
+    outline: 1px solid black;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+   
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    line-height: 35px;
+    transition: all 0.8s ease;
+}
+
+.text-contact:hover {
+    background: rgb(137, 81, 41);
+    color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    transform: translateY(-5px);
+}
+
+.skills-container {
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.skills-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: rgb(137, 81, 41);
+    text-align: center;
+    margin-bottom: 100px;
+   
+    letter-spacing: 2px; /* Slightly increases spacing between letters */
+    background: linear-gradient(to right, rgb(137, 81, 41), rgb(240, 200, 150));
+    -webkit-background-clip: text; /* Clips background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+    transform: translateY(-10px); /* Adds a slight upward offset */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.skills-header:hover {
+    transform: translateY(0px); /* Neutralizes the offset on hover */
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Enhances shadow on hover */
+}
+
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.skill-category {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+/* Media Query for 768px */
+@media (max-width: 768px) {
+    .introduction-section {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 20px auto; /* Center the image */
+    }
+
+    .introduction-text {
+        font-size: 1rem; /* Adjust text size */
+    }
+
+    .skills-grid {
+        gap: 50px; /* Reduce spacing between skill cards */
+    }
+
+    .skill-category {
+        width: 200px; /* Adjust width for smaller screens */
+    }
+
+    .skills-header {
+        font-size: 2rem; /* Reduce font size of header */
+    }
+}
+
+/* Media Query for 400px */
+@media (max-width: 400px) {
+    .introduction-section {
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .introduction-text {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+
+    .introduction-quote {
+        font-size: 0.8rem;
+        line-height: 1.2;
+    }
+
+    .text-contact {
+        width: 100px; /* Reduce button size */
+        height: 30px;
+        font-size: 0.8rem;
+        line-height: 30px;
+    }
+
+    .skills-header {
+        font-size: 1.5rem;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .skill-category {
+        width: 180px;
+        padding: 10px;
+    }
+
+    .skill-category h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill-category li {
+        font-size: 0.9rem;
+    }
+}
+
